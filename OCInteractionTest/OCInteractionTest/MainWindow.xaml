@@ -1,0 +1,25 @@
+﻿<Window
+    x:Class="OCInteractionTest.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="OneCommander integration test"
+    SizeToContent="WidthAndHeight">
+    <Grid>
+        <StackPanel Margin="10" Orientation="Vertical">
+            <TextBox
+                x:Name="PathTextBox"
+                Text="C:\Windows"
+                MinWidth="300"
+                Margin="10" />
+            <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+                <Button
+                    Click="GetButton_Click"
+                    Content="Get from OC" 
+                    Margin="0,0,2,0"/>
+                <Button
+                    Click="SetButton_Click"
+                    Content="Send path to OC" />
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
